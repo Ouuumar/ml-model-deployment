@@ -33,3 +33,9 @@ Run python notebook ipynb by command line with nbconvert :
 Register the model with mlflow:
 <https://mlflow.org/docs/latest/model-registry.html#api-workflow>
 
+Model of home risk default classification:
+<https://medium.com/@praveenkotha/home-credit-default-risk-end-to-end-machine-learning-project-1871f52e3ef2>
+
+Question to ask :
+
+How to make accuracy score, with x_test and new predictions ?

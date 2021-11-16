@@ -2,7 +2,7 @@
 
 # Download the data here please
 
-<https://www.kaggle.com/c/home-credit-default-risk/data?select=application_train.csv>
+https://www.kaggle.com/c/home-credit-default-risk/data?select=application_train.csv
 
 put it in the right folder "1_rawdata"
 
@@ -12,7 +12,7 @@ put it in the right folder "1_rawdata"
 
 pip3 install -r requirements.txt
 
-python 5_main.py
+python 5_main.py --model "model name"
 
 ## see the run in mlflow ui
 
