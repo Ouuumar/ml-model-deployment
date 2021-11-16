@@ -51,11 +51,11 @@ if __name__ == "__main__":
     """
     # initialize Argument Parser
     parser = argparse.ArgumentParser()
-    # we can add any different arguments we want to parse
+    # add model name to parse
     parser.add_argument("--model", type=str)
-    # we then read the arguments from the comand line
+    # read the argument from the comand line
     args = parser.parse_args()
-    #save the model in a variable to pass it through functions
+    # save the model in a variable to pass it through functions
     model_name = args.model
 
     warnings.filterwarnings("ignore")
@@ -75,21 +75,18 @@ if __name__ == "__main__":
             "Unable to download training & test CSV, check your internet connection. Error: %s",
         )
 
+    # start the mlflow run, to fit, and score
     with mlflow.start_run():
         clf = load_model(model_name)
         clf.fit(X_train, y_train)
-        score = eval_score(X_test, y_test, model_name)
 
+        score = eval_score(X_test, y_test, model_name)
         mlflow.log_metric("accuracy", score)
         print("\nLogged accuracy\n...")
+
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         print("\nTracking to MLflow UI\n...")
-        
-        # Model registry does not work with file store
-        if tracking_url_type_store != "file":
-            # Register the model
-            mlflow.sklearn.log_model(clf, "model", registered_model_name=str(model_name))
-            print("\nModel registered\n <3")
-        else:
-            mlflow.sklearn.log_model(clf, "model")
-            print("\nModel registered <3\nWithout :registered_model_name=str(model_name): \n...")
+
+        mlflow.sklearn.log_model(clf, "model")
+        print("\nModel registered <3\n...")
+
