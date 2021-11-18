@@ -1,4 +1,4 @@
-## Here are some sources i use to build my project :
+# Here are some sources I used to build my project
 
 Kaggle project Home credit risk classification:
 <https://www.kaggle.com/c/home-credit-default-risk/overview>
@@ -36,6 +36,12 @@ Register the model with mlflow:
 Model of home risk default classification:
 <https://medium.com/@praveenkotha/home-credit-default-risk-end-to-end-machine-learning-project-1871f52e3ef2>
 
-Question to ask :
+Still needed :
 
-How to make accuracy score, with x_test and new predictions ?
+python script to download train test form kaggle with kaggle api command line :
+mlflow models serve --model-uri C:\EFREI_M2\Big_Data_Applications\ML_project_tools\mlruns\0\ed2dd4a7353547fd97dc4b1245f25645\artifacts\model --no-conda -p 1234
+
+dataprep of test to encode and fit then pass it for pred
+score prediction and save it to deploy on rest server
+sphinx !!! for one file 
+part 3
