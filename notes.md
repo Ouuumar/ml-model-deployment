@@ -36,12 +36,25 @@ Register the model with mlflow:
 Model of home risk default classification:
 <https://medium.com/@praveenkotha/home-credit-default-risk-end-to-end-machine-learning-project-1871f52e3ef2>
 
+Slicing row df :
+<https://stackoverflow.com/questions/16096627/selecting-a-row-of-pandas-series-dataframe-by-integer-index>
+
+Save a force plot image:
+<https://github.com/slundberg/shap/issues/153>
+
+SHAP explained:
+<https://towardsdatascience.com/explain-any-models-with-the-shap-values-use-the-kernelexplainer-79de9464897a>
+
 Still needed :
 
-python script to download train test form kaggle with kaggle api command line :
-mlflow models serve --model-uri C:\EFREI_M2\Big_Data_Applications\ML_project_tools\mlruns\0\ed2dd4a7353547fd97dc4b1245f25645\artifacts\model --no-conda -p 1234
+(kaggle api command line to download csv [optionnal])
+dataprep validation
 
-dataprep of test to encode and fit then pass it for pred
-score prediction and save it to deploy on rest server
-sphinx !!! for one file 
-part 3
+Git :
+
+When create new branch :
+git checkout -b <branch_name>
+git push -u origin <branch_name> (create the upstream to link remote and local)
+
+When feature is done, rebase it :
+git push --rebase origin main (do it on your feature branch)
