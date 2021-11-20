@@ -2,8 +2,8 @@
 
 1_rawdata/
 mlruns/
-notes.md/
-5_test_main.ipynb/
-load_data.py/
+notes.md
+5_test_main.ipynb
+load_data.py
 __pycache__/
-conda.yaml/
+conda.yaml
