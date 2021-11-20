@@ -1,7 +1,3 @@
-"""
-Script to make a POST request with one row to get prediction
-"""
-
 import pandas as pd
 import os.path as path
 import json
