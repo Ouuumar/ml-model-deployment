@@ -1,4 +1,4 @@
-# Ignore IDE specific files
+# Ignore IDE specific files and folders
 
 1_rawdata/
 mlruns/
@@ -7,3 +7,7 @@ notes.md
 load_data.py
 __pycache__/
 conda.yaml
+Report.docx
+*.tmp
+*.docx
+*~
