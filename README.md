@@ -2,11 +2,13 @@
 
 ## CLASSIFICATION AND MODEL DEPLOYMENT
 
+## Important note : this project is not focused on the data preparation, but on the tools, frameworks and project architecture used to deploy the app
+
 Including SPHINX documentaion, MLFLOW lifecyle, SHAP model explainer
 
 ### STEP 1 : DOWNLOAD THE DATA
 
-Since the csv files are too big to be on GitHub, please download with the link below and do not forget to put csv files in the right folder : "1_rawdata"
+Since the csv files are too big to be pushed on GitHub, please download with the link below and do not forget to put csv files in the right folder : "1_rawdata"
 
 <https://www.kaggle.com/c/home-credit-default-risk/data?select=application_train.csv>
 
@@ -44,4 +46,10 @@ mlflow models serve –m path\to\the\runexperimentation\artifacts\model --no-con
 
 #### Run this command
 
+cd to the project location 
+
 python 6_request.py
+
+#### Documentation
+
+To look at the documentation of the main, open the index.html from the ../docs/hmtl
