@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn import metrics
+from sklearn.metrics import precision_recall_fscore_support as score
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from xgboost import XGBClassifier
 
@@ -27,7 +28,9 @@ def eval_score(X_test, y_test, model_name):
     """
     preds = make_prediction(X_test, model_name)
     clf = load_model(model_name)
-    return metrics.accuracy_score(y_test, preds)
+    precision, recall, fscore, support = score(y_test, preds)
+    accuracy = metrics.accuracy_score(y_test, preds)
+    return accuracy, precision, recall, fscore, support
 
 def make_prediction(X_test, model_name):
     """
@@ -89,9 +92,29 @@ if __name__ == "__main__":
         clf = load_model(model_name)
         clf.fit(X_train, y_train)
 
-        score = eval_score(X_test, y_test, model_name)
-        mlflow.log_metric("accuracy", score)
-        print("\nLogged accuracy\n...")
+        accuracy, precision, recall, fscore, support = eval_score(X_test, y_test, model_name)
+        mlflow.log_metric("accuracy", accuracy)
+        mlflow.log_metric("precision", precision[0])
+        mlflow.log_metric("recall", recall[0])
+        mlflow.log_metric("fscore", fscore[0])
+        mlflow.log_metric("Nb y_true", support[0])
+        mlflow.log_metric("Nb y_false", support[1])
+        print("\nLogged metrics\n...")
+
+        params = clf.get_params()
+
+        # Set wanted metrics
+        par1 = params.fromkeys(['objective'], params['objective']) 
+        par2 = params.fromkeys(['learning_rate'], params['learning_rate'])
+        par3 = params.fromkeys(['max_depth'], params['max_depth'])
+        par4 = params.fromkeys(['random_state'], params['random_state'])
+
+        # Concatenate them
+        par1.update(par2)
+        par1.update(par3)
+        par1.update(par4)
+
+        mlflow.log_params(par1)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         print("\nTracking to MLflow UI\n...")
