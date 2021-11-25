@@ -22,6 +22,12 @@ cd path\to\the\project\location
 
 pip3 install -r requirements.txt
 
+#### Run the notebooks with nbconvert
+
+Execute each notebook  from 1 to 7
+
+jupyter nbconvert --to notebook --execute mynotebook.ipynb
+
 Then below, you can choose your model (xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl)
 
 python 5_main.py --model "model name"

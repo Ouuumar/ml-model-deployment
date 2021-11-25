@@ -1,13 +1,20 @@
 # Ignore IDE specific files and folders
 
-1_rawdata/
-mlruns/
-notes.md
-5_test_main.ipynb
-load_data.py
 __pycache__/
+
+1_rawdata/
+2_dataprep/
+3_X_fitted_dataframe/
+4_y_dataframe/
+5_fitted_scaler/
+6_models/
+
+mlruns/
+
+4_predict.ipynb
+5_test_main.ipynb
+
 conda.yaml
-Report.docx
-*.tmp
-*.docx
-*~
+kaggle.json
+
+report/
