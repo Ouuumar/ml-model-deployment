@@ -20,23 +20,29 @@
 
 **Important note** : since I use my own kaggle token, it may disapear, and you will need to get your own kaggle key, to download datasets from Kaggle
 
-To get this kaggle key, sign in your kaggle account, go to your profil pic and click on "Your profile", then click on "Account", then in the section API, click on "Create new token API". **Save the json content in the kaggle.json (just copy paste your token in the existing file)**
+To get this kaggle key, sign in your kaggle account, go to your profil pic
+
+- click on "Your profile"
+- click on "Account"
+- click on "Create new token API", in the API section
+- **Save the json content in the kaggle.json (just copy paste your token in the existing file)**
 
 ## Run these commands, open as admin a CMD and then, cd to the project location
 
 ====================================
 
-**pip3 install -r requirements.txt**
+- Run **pip3 install -r requirements.txt**
 
 ====================================
 
-While the pipeline will train 3 models, it will only use the model given in input for logged and predictions
+While the pipeline will train 3 models, it will only use the model given in input for logs and predictions
 
-Run **python pipeline.py --model "model_name_desired"** (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the .pkl and without double "quotes" please)
+- Run **python pipeline.py --model "model_name_desired"**
+- (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the .pkl and without double "quotes" please)
 
 ====================================
 
-This pipeline is up to few minutes execution, so please, feel free to do something else on the side or watch the process and logs :)
+This pipeline is up to few minutes execution (depends on your compute power), so please, feel free to do something else on the side or watch the process and logs :)
 
 ====================================
 
@@ -48,9 +54,11 @@ This pipeline is up to few minutes execution, so please, feel free to do somethi
 
 ====================================
 
-Run **python 4_mlflow.py --model "model_name_desired"** (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the .pkl and without double "quotes" please)
+- Run **python 4_mlflow.py --model "model_name_desired"**
+- (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the .pkl and without double "quotes" please)
 
-Run **mlflow ui** to watch experimentations runs and logged metric
+- Run **mlflow ui**
+- Watch experimentations runs and logged metric
 
 ====================================
 
@@ -58,7 +66,8 @@ Run **mlflow ui** to watch experimentations runs and logged metric
 
 ====================================
 
-Run **python 5_request.py** (it will launch, predict and then stop automatically the REST server)
+- Run **python 5_request.py** 
+- (it will launch, predict and then stop automatically the REST server)
 
 ====================================
 
