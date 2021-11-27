@@ -4,7 +4,7 @@
 
 ====================================
 
-### **Fully automated pipeline**, to prepare the data, make feature engineering, model train, predict and score (should run once)
+### **Fully automated pipeline**, making data preparation, feature engineering, model training, predicting and scoring (should run once)
 
 ====================================
 
@@ -38,11 +38,11 @@ To get this kaggle key, sign in your kaggle account, go to your profil pic
 While the pipeline will train 3 models, it will only use the model given in input for logs and predictions
 
 - Run **python pipeline.py --model "model_name_desired"**
-- (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the .pkl and without double "quotes" please)
+- (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the **.pkl** and without double "quotes")
 
 ====================================
 
-This pipeline is up to few minutes execution (depends on your compute power), so please, feel free to do something else on the side or watch the process and logs :)
+This pipeline is up to few minutes execution (depends on your compute power), so feel free to do something else on the side or watch the process and logs :)
 
 ====================================
 
@@ -55,9 +55,9 @@ This pipeline is up to few minutes execution (depends on your compute power), so
 ====================================
 
 - Run **python 4_mlflow.py --model "model_name_desired"**
-- (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the .pkl and without double "quotes" please)
+- (among xgBoost.pkl, randomForest.pkl, GradientBoosting.pkl, precise in the argument the **.pkl** and without double "quotes" please)
 
-- Run **mlflow ui**
+- Run **mlflow ui** and open your local host
 - Watch experimentations runs and logged metric
 
 ====================================
