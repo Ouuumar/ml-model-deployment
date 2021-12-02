@@ -8,7 +8,7 @@
 
 ====================================
 
-#### **MLflow automated deployment**, tracking parameters and POST request to predict
+#### **MLflow automated deployment**, tracking parameters and make POST request to predict
 
 ====================================
 
@@ -46,7 +46,7 @@ This pipeline is up to few minutes execution (depends on your compute power), so
 
 ====================================
 
-## After the pipeline done
+## When the pipeline is done
 
 ====================================
 
@@ -67,7 +67,7 @@ This pipeline is up to few minutes execution (depends on your compute power), so
 ====================================
 
 - Run **python 5_request.py** 
-- (it will launch, predict and then stop automatically the REST server)
+- (it will launch, predict and then automatically stop the REST server)
 
 ====================================
 
