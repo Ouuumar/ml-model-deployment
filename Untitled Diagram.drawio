@@ -1,1 +1,56 @@
-<mxfile host="app.diagrams.net" modified="2022-03-08T17:25:03.300Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" version="17.0.0" etag="9rdM1Rp__pU5yLi2QsHi" type="github"><diagram id="ens3Bm6UW0SjF6Fs6zmQ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-08T17:28:42.859Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="xSBOfqn9xu7K14EOMfT2" version="17.0.0" type="github">
+  <diagram id="ens3Bm6UW0SjF6Fs6zmQ" name="Page-1">
+    <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="j4U0XXj80dtnHtLEi5NL-1" target="j4U0XXj80dtnHtLEi5NL-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-9" value="FEEDING" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="j4U0XXj80dtnHtLEi5NL-8">
+          <mxGeometry x="-0.1569" y="-1" relative="1" as="geometry">
+            <mxPoint x="5" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-1" value="search engine" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="180" y="230" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="j4U0XXj80dtnHtLEi5NL-2" target="j4U0XXj80dtnHtLEi5NL-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-2" value="Input&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="250" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="j4U0XXj80dtnHtLEi5NL-2" target="j4U0XXj80dtnHtLEi5NL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="j4U0XXj80dtnHtLEi5NL-6" target="j4U0XXj80dtnHtLEi5NL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-6" value="Scrape image on google image" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="j4U0XXj80dtnHtLEi5NL-7" target="j4U0XXj80dtnHtLEi5NL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.08;entryY=0.503;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="j4U0XXj80dtnHtLEi5NL-7" target="j4U0XXj80dtnHtLEi5NL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-13" value="REQUEST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="j4U0XXj80dtnHtLEi5NL-12">
+          <mxGeometry x="-0.3251" y="-2" relative="1" as="geometry">
+            <mxPoint x="22" y="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-7" value="DL model production" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="410" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-10" value="Response image classification : example a cat" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="j4U0XXj80dtnHtLEi5NL-14" value="Found images such as cats" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
